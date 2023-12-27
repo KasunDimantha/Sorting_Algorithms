@@ -4,9 +4,11 @@ package Sorting_Algorithms;
 public class Merge_Sort {
 
     public static void printArray(int[] a){
+        System.out.print("[");
         for (int i : a) {
             System.out.print(" "+ i);
         }
+        System.out.print("\b]");
     }
 
     public static void MergeSort(int[] unsortedArray, int p, int r){
@@ -47,7 +49,7 @@ public class Merge_Sort {
         System.out.print("Unsorted Array : ");
         printArray(a);
         MergeSort(a, 0, a.length - 1);
-        System.out.print("\nSorted Array : ");
+        System.out.print("\nSorted Array   : ");
         printArray(a);
     }
     
